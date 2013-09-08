@@ -1,0 +1,144 @@
+{
+	"name": "reference",
+	"apiVersion": "2013-07-10",
+	"description": "The 3taps Reference API provides information about the data sources, category groups, categories and locations available within the 3taps system",
+	"operations": {
+		"_abstractCommand": {
+			"httpMethod": "GET",
+			"additionalParameters": {
+                "location": "query"
+            }
+		},
+		"GetSources": {
+			"extends": "_abstractCommand",
+			"uri": "/sources"
+		},
+		"GetCategoryGroups": {
+			"extends": "_abstractCommand",
+			"uri": "/category_groups"
+		},
+		"GetCategories": {
+			"extends": "_abstractCommand",
+			"uri": "/categories",
+			"responseClass": "GetCategoriesOutput"
+		},
+		"GetLocations": {
+			"extends": "_abstractCommand",
+			"uri": "/locations",
+			"paramters": {
+				"level": {
+					"description": "The desired location level. (country,state,metro,region,county,city,locality,zipcode)",
+					"type": "string",
+                    "location": "query",
+                    "required": true
+				},
+				"country": {
+					"description": "Only include locations that are completely or partly within the given country. The parameter's value must be a valid 3taps country code.",
+					"type": "string",
+					"location": "query"
+				},
+				"state": {
+					"description": "Only include locations that are completely or partly within the given state. The parameter's value must be a valid 3taps state code",
+					"type": "string",
+					"location": "query"
+				},
+				"metro": {
+					"description": "Only include locations that are completely or partly within the given metro area. The parameter's value must be a valid 3taps metro area code.",
+					"type": "string",
+					"location": "query"
+				},
+				"region": {
+					"description": "Only include locations that are completely or partly within the given region. The parameter's value must be a valid 3taps region code.",
+					"type": "string",
+					"location": "query"
+				},
+				"county": {
+					"description": "Only include locations that are completely or partly within the given county. The parameter's value must be a valid 3taps county code.",
+					"type": "string",
+					"location": "query"
+				},
+				"city": {
+					"description": "Only include locations that are completely or partly within the given city. The parameter's value must be a valid 3taps city code.",
+					"type": "string",
+					"location": "query"
+				},
+				"locality": {
+					"description": "Only include locations that are completely or partly within the given locality. The parameter's value must be a valid 3taps locality code.",
+					"type": "string",
+					"location": "query"
+				},
+				"min_lat": {
+					"description": "only locations which are completely or partially enclosed by the given lat/long bounding box will be returned",
+					"type": "numeric",
+					"location": "query"
+				},
+				"min_long": {
+					"description": "only locations which are completely or partially enclosed by the given lat/long bounding box will be returned",
+					"type": "numeric",
+					"location": "query"
+				},
+				"max_lat": {
+					"description": "only locations which are completely or partially enclosed by the given lat/long bounding box will be returned",
+					"type": "numeric",
+					"location": "query"
+				},
+				"max_long": {
+					"description": "only locations which are completely or partially enclosed by the given lat/long bounding box will be returned",
+					"type": "numeric",
+					"location": "query"
+				}
+			}
+		},
+		"LocationLookup": {
+			"extends": "_abstractCommand",
+			"uri": "locations/lookup",
+			"parameters": {
+				"code": {
+					"description": "The 3taps location code for the desired location.",
+					"type": "string",
+                    "location": "query",
+                    "required": true
+				}
+			}
+
+
+		}
+	},
+	"models": {
+		"GetCategoriesOutput": {
+            "type": "object",
+            "properties": {
+            	"success": {
+            		"location": "json",
+                    "type": "string"
+            	}
+            },
+            "objects": {
+            	"categories": {
+					"type": "array",
+            		"items": {
+            			"type": "object",
+            			"properties": {
+            				"code": {
+            					"location": "json",
+            					"type": "string"
+            				},
+            				"group_code": {
+            					"location": "json",
+            					"type": "string"
+            				},
+            				"group_name": {
+            					"location": "json",
+            					"type": "string"
+            				},
+            				"name": {
+            					"location": "json",
+            					"type": "string"
+            				}
+            			}
+            		}
+            	}
+            }
+		}
+	}
+}

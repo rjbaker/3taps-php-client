@@ -1,0 +1,28 @@
+{
+	"name": "polling",
+	"apiVersion": "2013-07-10",
+	"description": "The 3taps Polling API makes it possible for external systems to poll the Data Commons server to obtain a list of new and updated postings as they come in.",
+	"operations": {
+		"_abstractCommand": {
+			"httpMethod": "GET",
+			"additionalParameters": {
+                "location": "query"
+            }
+		},
+		"anchor": {
+			"extends": "_abstractCommand",
+			"uri": "/anchor",
+			"parameters": {
+				"timestamp": {
+					"type": "string",
+					"location": "query",
+					"required": true
+				}
+			}
+		},
+		"poll": {
+			"extends": "_abstractCommand",
+			"uri": "/poll"
+		}
+	}
+}

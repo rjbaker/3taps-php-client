@@ -1,0 +1,24 @@
+{
+    "name": "cookieflow/3taps-client",
+    "homepage": "",
+    "description": "Client library for 3taps data commons APIs. Built on top of Guzzle.",
+    "keywords": ["3taps","rest","api","guzzle"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+          "name": "Cookieflow",
+          "homepage": "http://cookieflow.wordpress.com"
+        }
+    ],
+    "require": {
+        "guzzle/guzzle": "~3.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Cookieflow": "src/"
+        }
+    }
+}

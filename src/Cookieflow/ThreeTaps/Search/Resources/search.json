@@ -1,0 +1,27 @@
+{
+	"name": "search",
+	"apiVersion": "2013-07-10",
+	"description": "The 3taps Search API is responsible for searching against the database of postings. For example, it can be used to find all postings from a particular data source, category and location, or to find postings with a given annotation value.",
+	"operations": {
+		"_abstractCommand": {
+			"httpMethod": "GET",
+			"additionalParameters": {
+                "location": "query"
+            }
+		},
+		"Search": {
+			"extends": "_abstractCommand",
+			"uri": "/"
+		},
+		"Count": {
+			"extends": "Search",
+			"parameters": {
+				"count": {
+					"type": "string",
+                    "location": "query",
+                    "required": true
+				}
+			}
+		}
+	}
+}
