@@ -9,7 +9,7 @@ A PHP 5.3+ client for working with the [3taps](https://3taps.com) APIs.
 * Built on top of the awesome [Guzzle](http://guzzlephp.org) HTTP client framework.
 * Provides separate clients for the Reference, Search and Polling APIs.
 * Result iterators to automatically handle result pagination, tokens, tiers and anchors.
-* Include in your project using Composer or download the zip.
+* Include in your project using [Composer](https://packagist.org/packages/cookieflow/3taps-client) or download the [zip](https://github.com/cookieflow/3taps-php-client/archive/master.zip).
 
 ## Usage
 
