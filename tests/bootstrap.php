@@ -8,9 +8,11 @@ if (!$_ENV['auth_token']) {
     die("Unable to read servce auth_token '{$_ENV['auth_token']}'\n");
 }
 
+$token = $_ENV['ci_auth_token'] ? $_ENV['ci_auth_token'] : $_ENV['auth_token'];
+
 // Instantiate the service builder
 $service = Cookieflow\ThreeTaps\ThreeTapsService::factory(array(
-	'auth_token' => $_ENV['auth_token']
+	'auth_token' => $token
 ));
 
 Guzzle\Tests\GuzzleTestCase::setServiceBuilder($service);
