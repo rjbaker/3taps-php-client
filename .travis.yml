@@ -2,8 +2,7 @@ php:
 - 5.3
 - 5.4
 - 5.5
-env: 
-  global: 
-    secure: X13ROdPWdEN/1l596zKm/Pqz1ACB/rExIRrqnRKnuetB+chiMKL+aQplgK5QMxU9Zr0+z8XdCrOjymHzpLUcCRSzyOddlDPw7S72KNvN9D+xHY47B7X5LRWd4RtNXpFbHKHYa1huP7ORe2lCTdvlL5GPO0PkNCnpSl6iM8gjWjM=
-language: php
 before_script: composer install --dev
+language: php
+env: 
+  secure: gN+kyYf2zRLaDul+kPLhffGF3hINgABtZzpqH1sdTCo6pSI0PCr704ziT5AZ/WEj+qF4WreX4CIkzbQ3zD1d63XQNZ8z9UXmCYHkLQrrEjfhs5OME2z1Pw2DY+70Xl/R2arLrvADY5XHXhKT57MvQP54fTmnbCj/b0GhBvzr5hU=
