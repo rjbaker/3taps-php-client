@@ -1,8 +1,8 @@
+env: 
+  secure: Cq5ZtE0WhZrD3kZf68JNARPqpuqxVZcLV4qs1lOZn6ktMT1m1q4eyOwll56nzQjZKXA0tx4LhrJ1BfzA3riUynSOAhSRoANuWEExcphtlYuNltCBUZhc1L9I80apA+14pAewTcdCe6G8Mzvi2rJFYWrkRQI6gARwPzaRz1G2dvk=
+language: php
+before_script: composer install --dev
 php: 
 - 5.3
 - 5.4
 - 5.5
-before_script: composer install --dev
-language: php
-env: 
-  secure: gN+kyYf2zRLaDul+kPLhffGF3hINgABtZzpqH1sdTCo6pSI0PCr704ziT5AZ/WEj+qF4WreX4CIkzbQ3zD1d63XQNZ8z9UXmCYHkLQrrEjfhs5OME2z1Pw2DY+70Xl/R2arLrvADY5XHXhKT57MvQP54fTmnbCj/b0GhBvzr5hU=

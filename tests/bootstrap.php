@@ -8,7 +8,7 @@ if (!$_ENV['auth_token']) {
     die("Unable to read servce auth_token '{$_ENV['auth_token']}'\n");
 }
 
-$token = $_ENV['ci_auth_token'] ? $_ENV['ci_auth_token'] : $_ENV['auth_token'];
+$token = getenv('CI_AUTH_TOKEN'] ? $_ENV['CI_AUTH_TOKEN'] : $_ENV['auth_token'];
 
 // Instantiate the service builder
 $service = Cookieflow\ThreeTaps\ThreeTapsService::factory(array(
