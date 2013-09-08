@@ -89,7 +89,7 @@ The Polling API client supports the follwing methods:
 
 3Taps Method Name | PHP Client Method Name
 --- | ---
-anchor | `$pollingClient->anchor()`
+anchor | `$pollingClient->getAnchor()`
 poll | `$pollingClient->poll()`
 
 Please see the complete example below.

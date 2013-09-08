@@ -9,7 +9,7 @@
                 "location": "query"
             }
 		},
-		"anchor": {
+		"getAnchor": {
 			"extends": "_abstractCommand",
 			"uri": "/anchor",
 			"parameters": {

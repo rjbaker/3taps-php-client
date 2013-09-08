@@ -24,10 +24,8 @@ class PollIterator extends ResourceIterator
         // Parse the next token
         $this->nextToken = isset($result['anchor']) ? $result['anchor'] : false;
 
-        return $result['postings'];
+        return isset($result['postings']) ? $result['postings'] : array();
     }
-
-
 
     public function getAnchor()
     {
