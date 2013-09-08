@@ -19,7 +19,7 @@ class PollingClientTest extends GuzzleTestCase
 	public function testAnchorRequest()
 	{
 		$response = $this->client->getCommand('getAnchor', array(
-			'timestamp' => strtotime('-1 hour')
+			'timestamp' => strtotime('-4 hours')
 		))->getResponse();
 
         $this->assertTrue($response->isSuccessful());
