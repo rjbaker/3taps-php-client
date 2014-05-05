@@ -1,13 +1,13 @@
 {
-    "name": "cookieflow/3taps-client",
+    "name": "r-baker/3taps-client",
     "homepage": "",
     "description": "Client library for 3taps data commons APIs. Built on top of Guzzle.",
     "keywords": ["3taps","rest","api","guzzle"],
     "license": "Apache-2.0",
     "authors": [
         {
-          "name": "Cookieflow",
-          "homepage": "http://cookieflow.wordpress.com"
+          "name": "R Baker",
+          "homepage": "https://github.com/r-baker"
         }
     ],
     "require": {
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Cookieflow": "src/"
+            "Rbaker": "src/"
         }
     }
 }
