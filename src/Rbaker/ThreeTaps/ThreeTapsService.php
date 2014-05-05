@@ -1,6 +1,6 @@
 <?php
 
-namespace Cookieflow\ThreeTaps;
+namespace Rbaker\ThreeTaps;
 
 use Guzzle\Service\Builder\ServiceBuilder;
 use Guzzle\Common\Collection;
