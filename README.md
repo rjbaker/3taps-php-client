@@ -16,7 +16,7 @@ A PHP 5.3+ client for working with the [3taps](https://3taps.com) APIs.
 
 ### Install using Composer
 ```
-composer.phar require r-baker/3taps-client
+composer.phar require r-baker/3taps-php-client
 ```
 
 ### Create a service instance
