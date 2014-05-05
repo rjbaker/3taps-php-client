@@ -1,6 +1,6 @@
 <?php
 
-namespace Cookieflow\ThreeTaps\Search\Iterator;
+namespace Rbaker\ThreeTaps\Search\Iterator;
 
 use Guzzle\Service\Resource\ResourceIterator;
 
