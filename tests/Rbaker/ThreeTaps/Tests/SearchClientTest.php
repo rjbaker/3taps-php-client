@@ -1,6 +1,6 @@
 <?php
 
-namespace Cookieflow\ThreeTaps\Tests;
+namespace Rbaker\ThreeTaps\Tests;
 
 use Guzzle\Tests\GuzzleTestCase;
 
@@ -13,7 +13,7 @@ class SearchClientTest extends GuzzleTestCase
 
 	public function testSearchClientInstance()
 	{
-		$this->assertInstanceOf('Cookieflow\ThreeTaps\Search\SearchClient', $this->client);
+		$this->assertInstanceOf('Rbaker\ThreeTaps\Search\SearchClient', $this->client);
 	}
 
 	public function testSearchResultIteratorInstance()
@@ -22,7 +22,7 @@ class SearchClientTest extends GuzzleTestCase
 			'category_group' => 'JJJJ'
 		));
 
-		$this->assertInstanceOf('Cookieflow\ThreeTaps\Search\Iterator\SearchIterator', $iterator);
+		$this->assertInstanceOf('Rbaker\ThreeTaps\Search\Iterator\SearchIterator', $iterator);
 
 		return $iterator;
 	}

@@ -1,6 +1,6 @@
 <?php
 
-namespace Cookieflow\ThreeTaps\Tests;
+namespace Rbaker\ThreeTaps\Tests;
 
 use Guzzle\Tests\GuzzleTestCase;
 
@@ -13,7 +13,7 @@ class ReferenceClientTest extends GuzzleTestCase
 
 	public function testReferenceClientInstance()
 	{
-		$this->assertInstanceOf('Cookieflow\ThreeTaps\Reference\ReferenceClient', $this->client);
+		$this->assertInstanceOf('Rbaker\ThreeTaps\Reference\ReferenceClient', $this->client);
 	}
 
 	public function testSourcesRequest()

@@ -1,6 +1,6 @@
 <?php
 
-namespace Cookieflow\ThreeTaps\Tests;
+namespace Rbaker\ThreeTaps\Tests;
 
 use Guzzle\Tests\GuzzleTestCase;
 
@@ -13,7 +13,7 @@ class PollingClientTest extends GuzzleTestCase
 
 	public function testPollingClientInstance()
 	{
-		$this->assertInstanceOf('Cookieflow\ThreeTaps\Polling\PollingClient', $this->client);
+		$this->assertInstanceOf('Rbaker\ThreeTaps\Polling\PollingClient', $this->client);
 	}
 
 	public function testAnchorRequest()
@@ -38,7 +38,7 @@ class PollingClientTest extends GuzzleTestCase
 			'anchor' => $anchor
 		));
 
-		$this->assertInstanceOf('Cookieflow\ThreeTaps\Polling\Iterator\PollIterator', $iterator);
+		$this->assertInstanceOf('Rbaker\ThreeTaps\Polling\Iterator\PollIterator', $iterator);
 
 		return $iterator;
 	}

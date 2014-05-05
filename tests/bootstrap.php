@@ -11,7 +11,7 @@ if (!$_ENV['auth_token']) {
 $token = getenv('CI_AUTH_TOKEN') ? getenv('CI_AUTH_TOKEN') : getenv('auth_token');
 
 // Instantiate the service builder
-$service = Cookieflow\ThreeTaps\ThreeTapsService::factory(array(
+$service = Rbaker\ThreeTaps\ThreeTapsService::factory(array(
 	'auth_token' => $token
 ));
 
