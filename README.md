@@ -2,27 +2,27 @@
 ================
 
 A PHP 5.3+ client for working with the [3taps](https://3taps.com) APIs.
-[![Build Status](https://travis-ci.org/cookieflow/3taps-php-client.png?branch=master)](https://travis-ci.org/cookieflow/3taps-php-client)
+[![Build Status](https://travis-ci.org/r-baker/3taps-php-client.png?branch=master)](https://travis-ci.org/r-baker/3taps-php-client)
 
 ## Features
 
 * Built on top of the awesome [Guzzle](http://guzzlephp.org) HTTP client framework.
 * Provides separate clients for the Reference, Search and Polling APIs.
 * Result iterators to automatically handle result pagination, tokens, tiers and anchors.
-* Include in your project using [Composer](https://packagist.org/packages/cookieflow/3taps-client) or download the [zip](https://github.com/cookieflow/3taps-php-client/archive/master.zip).
+* Include in your project using [Composer](https://packagist.org/packages/r-baker/3taps-client) or download the [zip](https://github.com/r-baker/3taps-php-client/archive/master.zip).
 * Tested with PHP 5.3, 5.4 & 5.5.
 
 ## Usage
 
 ### Install using Composer
 ```
-composer.phar require cookieflow/3taps-client
+composer.phar require r-baker/3taps-client
 ```
 
 ### Create a service instance
 
 ```php
-use Cookieflow\ThreeTaps\ThreeTapsService;
+use Rbaker\ThreeTaps\ThreeTapsService;
 
 $service = ThreeTapsService::factory(array(
 	'auth_token' => 'your-private-auth-token'
@@ -106,7 +106,7 @@ Retrieve an anchor from the polling API and poll for all job-related postings in
 
 require 'vendor/autoload.php';
 
-use Cookieflow\ThreeTaps\ThreeTapsService;
+use Rbaker\ThreeTaps\ThreeTapsService;
 
 // create service instance
 $service = ThreeTapsService::factory(array(
