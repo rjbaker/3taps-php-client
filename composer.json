@@ -1,7 +1,7 @@
 {
-    "name": "r-baker/3taps-client",
+    "name": "r-baker/3taps-php-client",
     "homepage": "",
-    "description": "Client library for 3taps data commons APIs. Built on top of Guzzle.",
+    "description": "Client library for 3taps data commons APIs (https://3taps.com). Built on top of Guzzle.",
     "keywords": ["3taps","rest","api","guzzle"],
     "license": "Apache-2.0",
     "authors": [
