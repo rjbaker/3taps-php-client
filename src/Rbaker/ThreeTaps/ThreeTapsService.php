@@ -8,7 +8,7 @@ use Guzzle\Common\Collection;
 /**
  * 3taps Client Service Builder Class
  *
- * @author Cookieflow <cookieflow@gmail.com>
+ * @author Rbaker
  */
 class ThreeTapsService
 {
@@ -33,7 +33,7 @@ class ThreeTapsService
         		),
         		'reference' => array(
             		'extends' => 'abstract_service',
-            		'class'  => 'Cookieflow\ThreeTaps\Reference\ReferenceClient',
+            		'class'  => 'Rbaker\ThreeTaps\Reference\ReferenceClient',
             		'params' => array(
             			'service' => 'reference'
             		)
@@ -41,14 +41,14 @@ class ThreeTapsService
         		),
         		'search' => array(
             		'extends' => 'abstract_service',
-            		'class'   => 'Cookieflow\ThreeTaps\Search\SearchClient',
+            		'class'   => 'Rbaker\ThreeTaps\Search\SearchClient',
             		'params' => array(
             			'service' => 'search'
             		)
         		),
         		'polling' => array(
         			'extends' => 'abstract_service',
-        			'class' => 'Cookieflow\ThreeTaps\Polling\PollingClient',
+        			'class' => 'Rbaker\ThreeTaps\Polling\PollingClient',
         			'params' => array(
         				'service' => 'polling'
         			)
