@@ -4,7 +4,7 @@
 
     <testsuites>
         <testsuite name="ThreeTaps">
-            <directory suffix="Test.php">./tests/Cookieflow/ThreeTaps/Tests</directory>
+            <directory suffix="Test.php">./tests/Rbaker/ThreeTaps/Tests</directory>
         </testsuite>
     </testsuites>
 
