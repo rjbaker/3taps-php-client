@@ -10,7 +10,7 @@ A PHP 5.3+ client for working with the [3taps](https://3taps.com) APIs.
 * Provides separate clients for the Reference, Search and Polling APIs.
 * Result iterators to automatically handle result pagination, tokens, tiers and anchors.
 * Include in your project using [Composer](https://packagist.org/packages/r-baker/3taps-client) or download the [zip](https://github.com/r-baker/3taps-php-client/archive/master.zip).
-* Tested with PHP 5.3, 5.4 & 5.5.
+* Tested with PHP 5.3, 5.4 & 5.5
 
 ## Usage
 
