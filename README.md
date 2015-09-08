@@ -2,7 +2,7 @@
 ================
 
 A PHP 5.3+ client for working with the [3taps](https://3taps.com) APIs.
-[![Build Status](https://travis-ci.org/r-baker/3taps-php-client.png?branch=master)](https://travis-ci.org/r-baker/3taps-php-client)
+[![Build Status](https://travis-ci.org/rjbaker/3taps-php-client.png?branch=master)](https://travis-ci.org/r-baker/3taps-php-client)
 
 ## Features
 
